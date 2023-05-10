@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+        "id": "1",
+        "name": "Product A",
+        "price": 20.0,
+        "discountPercentage": 10,
+        "imageURL": "https://example.com/productA.jpg",
+        "unitsInStock": 50
+      },
+      {
+        "id": "2",
+        "name": "Product B",
+        "price": 30.0,
+        "discountPercentage": 5,
+        "imageURL": "https://example.com/productB.jpg",
+        "unitsInStock": 25
+      }
+  ]
+}

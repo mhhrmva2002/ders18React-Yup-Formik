@@ -4,14 +4,15 @@ import { v4 as uuidv4 } from 'uuid';
 import "./form.css";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import axios from 'axios';
 
 const BasicForm = () => {
   //form submit function
   const handleSubmit = async(values, actions) => {
     values.id = uuidv4();
-    console.log(values);
-    // await axios.post("random_url",values);
+    await axios.post("http://localhost:3000/products",values);
     actions.resetForm();
+    window.location.reload()
   };
   const formik = useFormik({
     initialValues: {
